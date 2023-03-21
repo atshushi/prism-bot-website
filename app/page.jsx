@@ -32,7 +32,7 @@ export default function homePage() {
         <ul className="mt-28 mb-10 w-full flex flex-wrap items-center justify-center gap-8">
           <li className="bg-[#F9F9F9] rounded-2xl h-32 w-96 px-3 py-5 shadow-lg">
             <h1 className="font-bold text-2xl mb-2">🕰️ Online at</h1>
-            <p className="text-xl pl-5">{`${new Date(data.uptime).getHours()}h ${new Date(data.uptime).getMinutes()}m ${new Date(data.uptime).getSeconds()}s`}</p>
+            <p className="text-xl pl-5">{`${~~(data.uptime / 3600000) % 24}h ${~~(data.uptime / 60000) % 60}m ${~~(data.uptime / 1000) % 60}s`}</p>
           </li>
 
           <li className="bg-[#F9F9F9] rounded-2xl h-50 w-96 px-3 py-5 shadow-lg">
