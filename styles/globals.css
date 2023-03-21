@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Work Sans", sans-serif;
+  color: #24292F;
+  overflow-x: hidden;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: linear-gradient(80deg, rgba(242, 230, 230, 1) 50%, rgba(255, 251, 251, 1) 100%);
+}
