@@ -1,8 +1,4 @@
 'use client';
-export const metadata = {
-  title: 'PrismBot',
-  description: 'The best music bot is PrismBot',
-};
 
 export default function Page({ children }) {
   const openNavbar = () => {
